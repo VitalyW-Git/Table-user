@@ -1,3 +1,10 @@
+OpenServer
+
+HTTP: Apache-PHP-7
+PHP-7.1
+MySQL-5.6
+
+
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
