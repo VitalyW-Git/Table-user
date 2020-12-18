@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use \yii\web\YiiAsset;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Users */
@@ -9,7 +10,8 @@ use yii\widgets\DetailView;
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
-\yii\web\YiiAsset::register($this);
+
+    YiiAsset::register($this);
 ?>
 <div class="users-view">
 

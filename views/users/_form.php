@@ -20,13 +20,8 @@ use yii\widgets\MaskedInput;
     <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'phone')->widget(MaskedInput::className(), ['mask' => '+7 (999) 999 99 99']) ?>
-<!--    --><?//= $form->field($model, 'phone')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
-
-<!--    --><?//= $form->field($model, 'created_at')->textInput() ?>
-
-<!--    --><?//= $form->field($model, 'updated_at')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохронить', ['class' => 'btn btn-success']) ?>

@@ -12,14 +12,11 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="users-index">
 
-<!--    <h1>--><?//= Html::encode($this->title) ?><!--</h1>-->
     <h1>Список</h1>
 
     <p>
         <?= Html::a('Создать', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

@@ -41,13 +41,6 @@ class Users extends ActiveRecord
             [ 'phone', 'match', 'pattern' => '/\+7 \(\d{3}\) \d{3} \d{2} \d{2}/', 'message' => 'Неверрный формат телефона!' ],
             [ ['surname'], 'safe' ],
         ];
-//        return [
-//            [['name', 'password', 'phone', 'email', 'created_at', 'updated_at'], 'required'],
-//            [['created_at', 'updated_at'], 'integer'],
-//            [['name', 'surname', 'password', 'email'], 'string', 'max' => 255],
-//            [['phone'], 'string', 'max' => 11],
-//            [['email'], 'unique'],
-//        ];
     }
 
     /**
