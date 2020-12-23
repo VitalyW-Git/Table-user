@@ -16,7 +16,7 @@ class UsersSearch extends Users
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+//            [['id'], 'integer'],
             [['name', 'surname', 'phone', 'email'], 'safe'],
         ];
     }
@@ -49,8 +49,9 @@ class UsersSearch extends Users
             return $dataProvider;
         }
 
-
+        // строгая фильтрация
         $query->andFilterWhere( ['id' => $this->id] );
+        // частичное совпадение строки like
         $query->andFilterWhere( ['like', 'name', $this->name] )
             ->andFilterWhere( ['like', 'surname', $this->surname] )
             ->andFilterWhere( ['like', 'phone', $this->phone] )

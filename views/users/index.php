@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\UsersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Users';
+$this->title = 'Список'; // заголовок вкладки браузера
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="users-index">
@@ -31,8 +31,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             //'created_at',
             //'updated_at',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+            //иконки для виджета
+            'class' => 'yii\grid\ActionColumn',
+            'template' => '{update}{delete}',
+            ]
         ],
     ]); ?>
 

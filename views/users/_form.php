@@ -10,7 +10,7 @@ use yii\widgets\MaskedInput;
 ?>
 
 <div class="users-form">
-
+<!--частичный вид добавляется в create и update-->
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
@@ -24,7 +24,7 @@ use yii\widgets\MaskedInput;
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Сохронить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

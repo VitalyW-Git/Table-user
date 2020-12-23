@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'language' => 'ru',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -28,7 +29,8 @@ $config = [
 //            'enableAutoLogin' => true,
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'users/error',
+//            'errorAction' => 'site/error',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -50,11 +52,16 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [],
+            'rules' => [
+                // ЧПУ
+                'create' => 'users/create'
+//                '<action>' => 'users/<action>'
+            ],
         ],
 
     ],
     'params' => $params,
+    'timeZone' => 'GMT+6',
 ];
 
 if (YII_ENV_DEV) {
