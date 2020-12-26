@@ -1,4 +1,4 @@
-OpenServer
+OpenServer:
 
 <p>HTTP: Apache-PHP-7</p>
 <p>PHP-7.1</p>
