@@ -4,11 +4,13 @@ OpenServer
 <p>PHP-7.1</p>
 <p>MySQL-5.6</p>
 <hr>
-create migrate
-<p>php yii migrate/create <name migrate></p>
+
+<p>create migrate<br>
+    php yii migrate/create <name migrate></p>
     
-create tables in db
-<p>php yii migrate</p>
+
+<p>create tables in db<br>
+    php yii migrate</p>
 <hr>
 
     'class' => 'yii\db\Connection',<br>
