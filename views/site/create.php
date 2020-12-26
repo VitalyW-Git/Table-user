@@ -7,7 +7,11 @@ use yii\helpers\Html;
 
 $this->title = 'Форма для заполнения';
 
-$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = [
+    //'label' => 'Users',
+    //'url' => ['index']
+//];
+
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="users-create">

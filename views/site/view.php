@@ -8,7 +8,12 @@ use \yii\web\YiiAsset;
 /* @var $model app\models\Users */
 
 $this->title = $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
+
+//$this->params['breadcrumbs'][] = [
+//    'label' => 'Users',
+//    'url' => ['index']
+//];
+
 $this->params['breadcrumbs'][] = $this->title;
 
     YiiAsset::register($this);

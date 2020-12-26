@@ -54,8 +54,10 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 // ЧПУ
-                'create' => 'users/create'
-//                '<action>' => 'users/<action>'
+//              'defaultRoute' => 'users/index',
+//              '/' => 'UsersController/index',
+//              'users/index' => 'site/index',
+                '<action>' => 'site/<action>'
             ],
         ],
 
@@ -64,6 +66,7 @@ $config = [
     'timeZone' => 'GMT+6',
 ];
 
+// модуль подключения gii
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';

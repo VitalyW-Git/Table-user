@@ -40,8 +40,8 @@ AppAsset::register($this);
         echo Nav::widget([
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
-                ['label' => 'Создать', 'url' => ['/users/create']],
-                ['label' => 'Список', 'url' => ['/users']],
+                ['label' => 'Создать', 'url' => ['site/create']],
+                ['label' => 'Список', 'url' => ['/']],
 
             ],
         ]);
