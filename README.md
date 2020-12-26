@@ -13,10 +13,10 @@ OpenServer:
     php yii migrate</p>
 <hr>
 
-    'class' => 'yii\db\Connection',<br>
+    <p>'class' => 'yii\db\Connection',<br>
     'dsn' => 'mysql:host=localhost;dbname=yii-user',<br>
     'username' => 'root',<br>
     'password' => '',<br>
-    'charset' => 'utf8',<br>
+    'charset' => 'utf8',</p>
 
 
