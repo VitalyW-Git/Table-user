@@ -11,13 +11,14 @@ create tables in db
 <p>php yii migrate</p>
 <hr>
 
+<?php
 
-return [<br>
-    'class' => 'yii\db\Connection',<br>
-    'dsn' => 'mysql:host=localhost;dbname=yii-user',<br>
-    'username' => 'root',<br>
-    'password' => '',<br>
-    'charset' => 'utf8',<br>
-];<br>
+return [
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=yii-user',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8',
+];
 
 
